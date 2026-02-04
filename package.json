@@ -1,0 +1,22 @@
+{
+  "name": "prisma-cursor-plugin",
+  "version": "0.1.0",
+  "description": "Cursor plugin for Prisma: MCP server, rules, skills, and code generation",
+  "private": true,
+  "workspaces": [
+    "mcp-server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=mcp-server",
+    "dev": "npm run dev --workspace=mcp-server",
+    "setup": "bash scripts/setup.sh",
+    "generate": "tsx scripts/generate.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
